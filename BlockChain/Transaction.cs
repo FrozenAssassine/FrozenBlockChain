@@ -18,5 +18,4 @@
             return $"({FromAddress} -> {ToAddress}: {Amount})";
         }
     }
-
 }

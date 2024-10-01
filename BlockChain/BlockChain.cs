@@ -12,7 +12,7 @@
         {
             chain = new List<Block>();
             CreateGenesisBlock();
-            CurrentMiner = "Julius"; // Replace with your miner's name or address
+            CurrentMiner = "Julius";
         }
 
         public void CreateGenesisBlock()
@@ -31,9 +31,7 @@
             newBlock.Mine(difficulty);
             chain.Add(newBlock);
 
-            // Reward the miner
             pendingTransactions.Add(new Transaction(null, CurrentMiner, miningReward));
-
             pendingTransactions.Clear();
         }
 
